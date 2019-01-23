@@ -1,0 +1,39 @@
+{
+    "name": "onebitmore/phpunit-merger",
+    "description": "Merge multiple PHPUnit reports into one file",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "PHPUnit",
+        "Coverage",
+        "MergeCoverage"
+    ],
+    "homepage": "https://github.com/OneBitMore/phpunit-merger",
+    "authors": [
+        {
+            "name": "Ivan Iakovenko",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpUnitMerger\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/OneBitMore/php-code-coverage"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "phpunit/php-code-coverage": "dev-master",
+        "symfony/console": "^4.2",
+        "symfony/finder": "^4.2",
+        "phpunit/phpunit": "^7.0"
+    },
+    "bin": [
+        "bin/phpunit-merger"
+    ]
+}
